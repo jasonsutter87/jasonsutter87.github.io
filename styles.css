@@ -1,353 +1,719 @@
-.center{
-	text-align: center;
-}
-
-.titles{
-	font-family: 'Old Standard TT', serif;
-	color: white;
-	font-size: 1.55em;
-	padding-top: 15%;
-	margin-bottom: 60px;
-}
-
-.name{
-	font-family: 'Oswald', sans-serif;
-	color: white;
-	font-size: 3.5em;
-	padding-bottom: 35px;
-}
-
-
-.title-bg{
-	background-color: #333333;
-	padding-top: 30px;
-	padding: 15px;
-	border-radius: 5px;
-}
-
-
-.button {
-    background-color: transparent;
-    border-radius: 5px;
-    font-family: 'Old Standard TT', serif;
-    color: white;
-    border: 2px solid white;
-    padding: 15px 32px;
+/*FOR MOBILE*/
+@media only screen and (max-width: 768px) {
+   .center{
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
+    }
 
-.button:hover {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-}
+    .titles{
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        font-size: 1.55em;
+        padding-top: 15%;
+        margin-bottom: 60px;
+    }
+    .container{
+        margin-bottom: 80px;
+    }
 
 
-#landing{
-	/* The image used */
-    background-image: url('images/landing-bg.jpg');
-     -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
-    filter: grayscale(50%);
-    /* Full height */
-    height: 100%; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box{
+    .name{
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 3.5em;
+        padding-bottom: 35px;
+    }
+
+
+    .title-bg{
+        background-color: #333333;
+        padding-top: 30px;
+        padding: 15px;
         border-radius: 5px;
-        background-color: rgba(0,0,0,0.45);
-
-}
-#about_me{
-	/* The image used */
-    background-image: url('images/aboutme-bg-sm.jpg');
-     -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
-    filter: grayscale(50%);
-    /* Full height */
-    height: 85%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.mainTitles{
-	font-family: 'Oswald', sans-serif;
-	color: black;
-	font-size: 3.5em;
-}
-
-.icons{
-	padding-top: 60px;
-	padding-bottom: 50px; 
-}
-#projects{
-	background-color: snow;
-}
-#footer{
-	background-color: snow;
-}
-
-.icons a {
-    color: #262626;
-    text-decoration: none;
-}
-
-.icons a:visited {
-    color: #262626;
-    text-decoration: none;
-}
+    }
 
 
-.icons a:hover {
-    color: #999999;
-    text-decoration: none;
-}
+    .button {
+        background-color: transparent;
+        border-radius: 5px;
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        border: 2px solid white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
 
-.aboutBg{
-	background-color: #333333;
-	padding-top: 30px;
-	padding: 15px;
-	border-radius: 5px;
-}
-
-.projectLink{
-	font-family: 'Old Standard TT', serif;
-	font-size: 1.5em;
-	color: grey;
-}
+    .button:hover {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
 
 
-.projectLink:hover{
-	font-family: 'Old Standard TT', serif;
-	font-size: 1.65em;
-	color: black;
-	text-decoration: none;
-}
+    #landing{
+        /* The image used */
+        background-image: url('images/landing-bg.jpg');
+         -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+        filter: grayscale(50%);
+        /* Full height */
+        height: 100%; 
 
-#show_page{
-        background-image: url('images/show-bg.jpg');
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
         background-repeat: no-repeat;
-        background-size: 100% 100%;"
-        padding-top: 25%;
-        padding-bottom: 25%;
+        background-size: cover;
+    }
+    .box{
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0.45);
 
+    }
+    #about_me{
+        /* The image used */
+        background-image: url('images/aboutme-bg-sm.jpg');
+         -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+        filter: grayscale(50%);
+        /* Full height */
+        height: 100%;
+        margin-bottom: 30px; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mainTitles{
+        font-family: 'Oswald', sans-serif;
+        color: black;
+        font-size: 3.5em;
+    }
+
+    .icons{
+        padding-top: 60px;
+        padding-bottom: 50px; 
+    }
+    #projects{
+        background-color: snow;
+    }
+    #footer{
+        background-color: snow;
+    }
+
+    .icons a {
+        color: #262626;
+        text-decoration: none;
+    }
+
+    .icons a:visited {
+        color: #262626;
+        text-decoration: none;
+    }
+
+
+    .icons a:hover {
+        color: #999999;
+        text-decoration: none;
+    }
+
+    .aboutBg{
+        background-color: #333333;
+        padding-top: 30px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .projectLink{
+        font-family: 'Old Standard TT', serif;
+        font-size: 1.5em;
+        color: grey;
+    }
+
+
+    .projectLink:hover{
+        font-family: 'Old Standard TT', serif;
+        font-size: 1.65em;
+        color: black;
+        text-decoration: none;
+    }
+
+    #show_page{
+            background-image: url('images/show-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;"
+            padding-top: 25%;
+            padding-bottom: 25%;
+
+    }
+
+    #show_image{
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+    .role{
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        text-align: center;
+        font-size: 1.35em;
+        text-decoration: none;
+    }
+    .title-white{
+        
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 4em;
+            text-decoration: none;
+        }
+         .animation-role{
+          
+            font-family: 'Old Standard TT', serif;
+            color: white;
+            text-align: center;
+            font-size: 1.35em;
+            text-decoration: none;
+        }
+    .text-left{
+            padding-left: 15%;
+             font-family: 'Old Standard TT', serif;
+            color: white;
+            text-align: left;
+            font-size: 1.35em;
+            text-decoration: none;
+        }
+    .show_code_left{
+        padding-left: 25%;
+         font-family: 'Old Standard TT', serif;
+        color: white;
+        text-align: left;
+        font-size: 2em;
+        text-decoration: none;
+
+    }
+
+    .show_code_left_live{
+        padding-left: 15%;
+         font-family: 'Old Standard TT', serif;
+        color: white;
+        text-align: left;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    a.showLink:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    a.showLink:hover{
+        color: orange;
+        text-decoration: none;
+    }
+
+    a.showLink{
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+    a.projectImg:hover{
+
+        -webkit-filter: grayscale(100%);  Chrome, Safari, Opera 
+        filter: grayscale(100%);
+      
+    }
+
+
+    .tile-image{
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutTitle{
+        padding-top: 60px;
+    }
+
+    .footerTitle{
+        font-family: 'Old Standard TT', serif;
+        font-size: 1em;
+        color: grey;
+    }
+
+
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent;
+        
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        background-color: white;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        color: white;
+        background-color: transparent;
+    }
+
+    .dropdown-menu{
+        background-color: rgba(0,0,0,0.25);
+    }
+
+    .brand,
+    .address-bar {
+        display: none;
+    }
+
+    .navbar-brand {
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: white;
+    }
+
+    .navbar-default {
+        border: none;
+        background: rgba(0,0,0,0.25);
+        border-radius: 0px;
+
+    }
+    .navbar-nav {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .img-full {
+        min-width: 100%;
+    }
+
+    .brand-before,
+    .brand-name {
+        text-transform: capitalize;
+    }
+
+    .brand-before {
+        margin: 15px 0;
+    }
+
+    .brand-name {
+        margin: 0;
+        font-size: 4em;
+    }
+
+    .tagline-divider {
+        margin: 15px auto 3px;
+        max-width: 250px;
+        border-color: #999999;
+    }
+
+    .navbar-default .navbar-brand {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        color: white;
+    }
+
+    .show_title_left{
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            text-decoration: none;
+
+    } 
+
+    /*END FOR MOBILE*/
 }
 
-#show_image{
-    border-radius: 5px;
-    margin: 15%;
-    width: 125%;
-    height: auto;
-}
-
-
-
-
-.role{
-    padding-left: 25%;
-    font-family: 'Old Standard TT', serif;
-    color: white;
+/*FOR DESKTOPS*/
+@media only screen and (min-width: 767px) {
+    .center{
     text-align: center;
-    font-size: 1.35em;
-    text-decoration: none;
-}
-.title-white{
-    
+    }
+
+    .titles{
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        font-size: 1.55em;
+        padding-top: 15%;
+        margin-bottom: 60px;
+    }
+
+    .name{
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 3.5em;
+        padding-bottom: 35px;
+    }
+
+
+    .title-bg{
+        background-color: #333333;
+        padding-top: 30px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+
+    .button {
+        background-color: transparent;
+        border-radius: 5px;
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        border: 2px solid white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .button:hover {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+
+
+    #landing{
+        /* The image used */
+        background-image: url('images/landing-bg.jpg');
+         -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+        filter: grayscale(50%);
+        /* Full height */
+        height: 100%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .box{
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0.45);
+
+    }
+    #about_me{
+        /* The image used */
+        background-image: url('images/aboutme-bg-sm.jpg');
+         -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+        filter: grayscale(50%);
+        /* Full height */
+        height: 85%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mainTitles{
+        font-family: 'Oswald', sans-serif;
+        color: black;
+        font-size: 3.5em;
+    }
+
+    .icons{
+        padding-top: 60px;
+        padding-bottom: 50px; 
+    }
+    #projects{
+        background-color: snow;
+    }
+    #footer{
+        background-color: snow;
+    }
+
+    .icons a {
+        color: #262626;
+        text-decoration: none;
+    }
+
+    .icons a:visited {
+        color: #262626;
+        text-decoration: none;
+    }
+
+
+    .icons a:hover {
+        color: #999999;
+        text-decoration: none;
+    }
+
+    .aboutBg{
+        background-color: #333333;
+        padding-top: 30px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .projectLink{
+        font-family: 'Old Standard TT', serif;
+        font-size: 1.5em;
+        color: grey;
+    }
+
+
+    .projectLink:hover{
+        font-family: 'Old Standard TT', serif;
+        font-size: 1.65em;
+        color: black;
+        text-decoration: none;
+    }
+
+    #show_page{
+            background-image: url('images/show-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;"
+            padding-top: 25%;
+            padding-bottom: 25%;
+
+    }
+
+    #show_image{
+        border-radius: 5px;
+        margin: 15%;
+        width: 125%;
+        height: auto;
+    }
+
+
+
+
+    .role{
+        padding-left: 25%;
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        text-align: center;
+        font-size: 1.35em;
+        text-decoration: none;
+    }
+    .title-white{
+        
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 4em;
+            text-decoration: none;
+        }
+         .animation-role{
+          
+            font-family: 'Old Standard TT', serif;
+            color: white;
+            text-align: center;
+            font-size: 1.35em;
+            text-decoration: none;
+        }
+    .text-left{
+            padding-left: 25%;
+            font-family: 'Old Standard TT', serif;
+            color: white;
+            text-align: left;
+            font-size: 1.35em;
+            text-decoration: none;
+        }
+    .show_code_left{
+        padding-left: 50%;
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+
+    }
+
+    .show_code_left_live{
+        padding-left: 40%;
+        font-family: 'Old Standard TT', serif;
+        color: white;
+        text-align: left;
+        font-size: 2em;
+        text-decoration: none;
+    }
+
+    a.showLink:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    a.showLink:hover{
+        color: orange;
+        text-decoration: none;
+    }
+
+    a.showLink{
+        color: white;
+        text-decoration: none;
+    }
+
+    .show_title_left{
+        padding-left: 27%;
         font-family: 'Oswald', sans-serif;
         color: white;
         text-align: center;
         font-size: 4em;
         text-decoration: none;
+
     }
-     .animation-role{
-      
-        font-family: 'Libre Baskerville', serif;
-        color: white;
-        text-align: center;
-        font-size: 1.35em;
-        text-decoration: none;
+
+    a.show_code_left_live:visited{
+        
     }
-.text-left{
-        padding-left: 25%;
-        font-family: 'Libre Baskerville', serif;
-        color: white;
-        text-align: left;
-        font-size: 1.35em;
-        text-decoration: none;
+
+    a.show_code_left_live:hover{
+
     }
-.show_code_left{
-    padding-left: 50%;
-    font-family: 'Libre Baskerville', serif;
-    color: white;
-    text-align: left;
-    font-size: 2em;
-    text-decoration: none;
-
-}
-
-.show_code_left_live{
-    padding-left: 40%;
-    font-family: 'Libre Baskerville', serif;
-    color: white;
-    text-align: left;
-    font-size: 2em;
-    text-decoration: none;
-}
-
-a.showLink:visited{
-    color: white;
-    text-decoration: none;
-}
-
-a.showLink:hover{
-    color: orange;
-    text-decoration: none;
-}
-
-a.showLink{
-    color: white;
-    text-decoration: none;
-}
-
-.show_title_left{
-    padding-left: 27%;
-    font-family: 'Archivo Black', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 4em;
-    text-decoration: none;
-
-}
-
-a.show_code_left_live:visited{
-    
-}
-
-a.show_code_left_live:hover{
-
-}
-
-
-a.projectImg:hover{
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-}
-
-.tile-image{
-	border-radius: 5px;
-	width: 100%;
-	height: auto;
-}
-
-.aboutTitle{
-	padding-top: 60px;
-}
-
-.footerTitle{
-	font-family: 'Old Standard TT', serif;
-	font-size: 1em;
-	color: grey;
-}
 
 
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: transparent;
-    
-}
-.navbar-default .navbar-toggle .icon-bar {
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-    background-color: white;
-}
 
-.navbar-default .navbar-nav>li>a {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-    color: white;
-}
-.navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-    color: white;
-    background-color: transparent;
-}
+    a.projectImg:hover{
 
-.dropdown-menu{
-	background-color: rgba(0,0,0,0.25);
-}
+        -webkit-filter: grayscale(100%);  Chrome, Safari, Opera 
+        filter: grayscale(100%);
+      position: absolute;
+     
+      border-radius: 5px;
+      background: rgba(240,230,220, .7);
+      box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    }
 
-.brand,
-.address-bar {
-    display: none;
-}
 
-.navbar-brand {
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
+    .tile-image{
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+    }
 
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: white;
-}
+    .aboutTitle{
+        padding-top: 60px;
+    }
 
-.navbar-default {
-    border: none;
-    background: rgba(0,0,0,0.25);
-    border-radius: 0px;
+    .footerTitle{
+        font-family: 'Old Standard TT', serif;
+        font-size: 1em;
+        color: grey;
+    }
 
-}
-.navbar-nav {
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 3px;
-}
 
-.img-full {
-    min-width: 100%;
-}
 
-.brand-before,
-.brand-name {
-    text-transform: capitalize;
-}
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent;
+        
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        background-color: white;
+    }
 
-.brand-before {
-    margin: 15px 0;
-}
-
-.brand-name {
-    margin: 0;
-    font-size: 4em;
-}
-
-.tagline-divider {
-    margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999999;
-}
-
-.navbar-default .navbar-brand {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-    color: white;
-}
-
-.show_title_left{
-        padding-left: 27%;
-        font-family: 'Oswald', sans-serif;
+    .navbar-default .navbar-nav>li>a {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
         color: white;
-        text-align: center;
-        font-size: 3em;
-        text-decoration: none;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        color: white;
+        background-color: transparent;
+    }
 
+    .dropdown-menu{
+        background-color: rgba(0,0,0,0.25);
+    }
+
+    .brand,
+    .address-bar {
+        display: none;
+    }
+
+    .navbar-brand {
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: white;
+    }
+
+    .navbar-default {
+        border: none;
+        background: rgba(0,0,0,0.25);
+        border-radius: 0px;
+
+    }
+    .navbar-nav {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .img-full {
+        min-width: 100%;
+    }
+
+    .brand-before,
+    .brand-name {
+        text-transform: capitalize;
+    }
+
+    .brand-before {
+        margin: 15px 0;
+    }
+
+    .brand-name {
+        margin: 0;
+        font-size: 4em;
+    }
+
+    .tagline-divider {
+        margin: 15px auto 3px;
+        max-width: 250px;
+        border-color: #999999;
+    }
+
+    .navbar-default .navbar-brand {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+        color: white;
+    }
+
+    .show_title_left{
+            padding-left: 27%;
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            text-decoration: none;
+
+    }
+    /*END FOR DESKTOPS*/
 }
+
+
 
