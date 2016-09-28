@@ -424,7 +424,7 @@
          -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
         filter: grayscale(50%);
         /* Full height */
-        height: 85%; 
+        height: 55%; 
 
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
