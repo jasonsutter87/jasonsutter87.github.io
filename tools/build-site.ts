@@ -76,7 +76,7 @@ const COPY: any = {
   ],
 };
 
-const BLOCKS = ["nav", "hero", "stats", "features", "projects", "steps", "timeline", "faq", "cta", "contact", "footer"];
+const BLOCKS = ["nav", "hero", "stats", "colophon", "features", "projects", "steps", "timeline", "faq", "cta", "contact", "footer"];
 const v = E.shuffleVariant("jason-sutter", 4, { blocks: BLOCKS });   // #4: the terminal design
 const acc = v.accentKey ? (E.NAMED_COLORS as any)[v.accentKey] : null;
 const style = { key: v.persona, vibe: v.vibe, accentKey: v.accentKey || undefined,
