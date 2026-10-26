@@ -44,6 +44,10 @@ const brief: any = {
 
 // The page's own facts. They ride in the state as page copy, so the builder reopens the
 // same page rather than one with placeholder figures.
+// The builder's own size, read from the engine so the figures stay true as it grows.
+const SECTION_TYPES = Object.keys(E.SECTIONS).length;
+const DESIGNS = Object.keys(E.SECTIONS).reduce((n: number, k: string) => n + E.variantsFor(k).length, 0);
+
 const COPY: any = {
   eyebrow: "Applied AI · Product engineering · Open to work",
   headline: "I build AI that runs on your own machine, and the products around it.",
@@ -55,6 +59,22 @@ const COPY: any = {
     ["Audit findings fixed", "661", "/663", "From my own security review of Lectern."],
   ],
   projects: PROJECTS,
+  spotlight: {
+    eyebrow: "Two things I built",
+    title: "I built an AI. And a website builder that doesn't need one.",
+    lead: "werbos is my own AI, built from scratch and run on my own hardware. werbos.design is a site generator with no AI in it at all.",
+    items: [
+      { kicker: "The AI", name: "werbos", title: "An AI you actually own.",
+        body: "A local-first AI agent system I built from scratch: agent loop with tool calling, RAG, memory, an eval harness and LoRA fine-tuning, all on open-weight models. Off-grid by default, and it never phones home. Every day of the build is written up in a public log.",
+        facts: [["2,100+", "commits"], ["<1s", "responses"], ["0", "hosted LLM calls"]],
+        links: [{ label: "Visit werbos", href: "https://werbos.netlify.app/" }, { label: "Read the build log", href: "https://werbos.netlify.app/log/" }] },
+      { kicker: "The website builder", name: "werbos.design", title: "A website builder with no LLM in it.",
+        body: "Describe a site and get a finished, on-brand page back, composed deterministically from a brief: the same brief makes the same site, offline, for about $0 a build. No templates to pick, no model to pay for.",
+        facts: [[String(SECTION_TYPES), "section types"], [String(DESIGNS), "designs"], ["0", "LLM calls"]],
+        links: [{ label: "Open the builder", href: "https://werbos-design.netlify.app/" }, { label: "How this page was made", href: "#made" }] },
+    ],
+    foot: { text: "Then I dogfooded it: every section of this page came out of werbos.design.", label: "See the brief it was built from.", href: "#made" },
+  },
   plate: [["Role", "Applied AI / Product"], ["Stack", "TS · Rust · Python"], ["Runs on", "your box"], ["Status", "Open to work"]],
   plateTag: "resume", plateLive: "Available now",
   milestones: [
@@ -76,10 +96,10 @@ const COPY: any = {
   ],
 };
 
-const BLOCKS = ["nav", "hero", "stats", "colophon", "features", "projects", "steps", "timeline", "faq", "cta", "contact", "footer"];
+const BLOCKS = ["nav", "hero", "stats", "spotlight", "colophon", "features", "projects", "steps", "timeline", "faq", "cta", "contact", "footer"];
 // #4: the terminal design. Features pinned to the spec sheet: the default "one big + small"
 // made the first project a giant panel, and the card gallery right below is the place for cards.
-const v = E.shuffleVariant("jason-sutter", 4, { blocks: BLOCKS, pin: { features: "spec" } });
+const v = E.shuffleVariant("jason-sutter", 4, { blocks: BLOCKS, pin: { features: "spec", spotlight: "pair" } });
 const acc = v.accentKey ? (E.NAMED_COLORS as any)[v.accentKey] : null;
 const style = { key: v.persona, vibe: v.vibe, accentKey: v.accentKey || undefined,
   accent: acc ? acc[0] : undefined, accentDeep: acc ? acc[1] : undefined,
