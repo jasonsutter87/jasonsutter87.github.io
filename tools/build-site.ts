@@ -33,7 +33,7 @@ const brief: any = {
   email: "jasonsutter87@gmail.com",
   location: "Sacramento, CA · SF Bay, Austin, Boston or remote",
   featuresRaw: [
-    "werbos — A local-first AI assistant built from scratch: agent loop, tool calling, RAG, evals and LoRA fine-tuning on open-weight models. 2,100+ commits.",
+    "werbos — A local-first AI assistant built from scratch: agent loop, tool calling, RAG, evals and LoRA fine-tuning. 2,100+ commits.",
     "Tallybook — Bookkeeping and a household budget on your own computer. Rust + Tauri + React, bank sync, paid plans. Live at tallybook.app.",
     "murmur + hablo — Voice AI that runs on-device: hold-to-talk dictation on whisper.cpp, and an offline Spanish tutor on llama.cpp.",
     "WRITEpad — A script-writing desk for Mac and Windows with A/B drafts, local narration, and an MCP server so agents can edit.",
@@ -77,7 +77,9 @@ const COPY: any = {
 };
 
 const BLOCKS = ["nav", "hero", "stats", "colophon", "features", "projects", "steps", "timeline", "faq", "cta", "contact", "footer"];
-const v = E.shuffleVariant("jason-sutter", 4, { blocks: BLOCKS });   // #4: the terminal design
+// #4: the terminal design. Features pinned to the spec sheet: the default "one big + small"
+// made the first project a giant panel, and the card gallery right below is the place for cards.
+const v = E.shuffleVariant("jason-sutter", 4, { blocks: BLOCKS, pin: { features: "spec" } });
 const acc = v.accentKey ? (E.NAMED_COLORS as any)[v.accentKey] : null;
 const style = { key: v.persona, vibe: v.vibe, accentKey: v.accentKey || undefined,
   accent: acc ? acc[0] : undefined, accentDeep: acc ? acc[1] : undefined,
