@@ -1,301 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jason Sutter</title>
-  <meta name="description" content="Software engineer building privacy-first tools, cryptographic systems, and developer platforms.">
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --border: #21262d;
-      --text: #e6edf3;
-      --text-muted: #8b949e;
-      --accent: #58a6ff;
-      --accent-hover: #79c0ff;
-      --green: #3fb950;
-      --purple: #bc8cff;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
-    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
-    a:hover { color: var(--accent-hover); }
-
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* Header */
-    header {
-      padding: 80px 0 40px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    header h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      color: var(--text-muted);
-      font-size: 1.1rem;
-      max-width: 540px;
-    }
-
-    .links {
-      display: flex;
-      gap: 20px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-
-    .links a {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.2s;
-    }
-
-    .links a:hover { color: var(--text); }
-
-    .links svg {
-      width: 18px;
-      height: 18px;
-      fill: currentColor;
-    }
-
-    /* Projects */
-    section {
-      padding: 48px 0;
-    }
-
-    section h2 {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-    }
-
-    .projects {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .project {
-      display: block;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 20px 24px;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-
-    .project:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-
-    .project-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 6px;
-    }
-
-    .project-name {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .project-tag {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 3px 8px;
-      border-radius: 12px;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-
-    .tag-live {
-      background: rgba(63, 185, 80, 0.15);
-      color: var(--green);
-    }
-
-    .tag-preview {
-      background: rgba(88, 166, 255, 0.15);
-      color: var(--accent);
-    }
-
-    .tag-paper {
-      background: rgba(188, 140, 255, 0.15);
-      color: var(--purple);
-    }
-
-    .tag-soon {
-      background: rgba(139, 148, 158, 0.15);
-      color: var(--text-muted);
-    }
-
-    .project-desc {
-      color: var(--text-muted);
-      font-size: 0.92rem;
-    }
-
-    .project-tech {
-      margin-top: 10px;
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .tech {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      background: rgba(139, 148, 158, 0.1);
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-
-    /* Footer */
-    footer {
-      padding: 40px 0;
-      border-top: 1px solid var(--border);
-      text-align: center;
-    }
-
-    footer p {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-
-    @media (max-width: 480px) {
-      header { padding: 48px 0 32px; }
-      header h1 { font-size: 1.8rem; }
-      .project { padding: 16px 18px; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Sutter · Software Engineer</title>
+  <meta name="description" content="Jason Sutter: software engineer building local AI, Rust desktop apps and applied cryptography. Browse every project, filtered for the role you're hiring for.">
+  <meta property="og:title" content="Jason Sutter · Software Engineer">
+  <meta property="og:description" content="Every project I've built, with real commit history. Pick the role you're hiring for and the projects re-rank to match.">
+  <meta property="og:url" content="https://jasonsutter87.github.io/">
+  <meta property="og:image" content="https://github.com/jasonsutter87.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2326a641'/><text x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='white' text-anchor='middle'>js</text></svg>">
+  <link rel="stylesheet" href="site.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
 </head>
 <body>
+  <a class="skip" href="#projects">Skip to projects</a>
 
-  <div class="container">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./" aria-label="Jason Sutter, home">
+        <span class="brand-mark" aria-hidden="true">js</span>
+        <span class="brand-path">jasonsutter87 <span class="muted">/</span> <b>everything-i-built</b></span>
+      </a>
+      <label class="search">
+        <span class="sr-only">Search projects</span>
+        <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M10.68 11.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06zM11.25 7a4.25 4.25 0 1 0-8.5 0 4.25 4.25 0 0 0 8.5 0"/></svg>
+        <input id="q" type="search" placeholder="Search projects, stacks, ideas…" autocomplete="off">
+        <kbd aria-hidden="true">/</kbd>
+      </label>
+      <button id="theme" class="icon-btn" type="button" aria-label="Toggle color theme">
+        <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8m0-1.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M8 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 8 0m0 13a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 13M2.34 2.34a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L2.34 3.4a.75.75 0 0 1 0-1.06m9.2 9.2a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06M0 8a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m13 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 13 8M2.34 13.66a.75.75 0 0 1 0-1.06l1.06-1.06a.75.75 0 0 1 1.06 1.06L3.4 13.66a.75.75 0 0 1-1.06 0m9.2-9.2a.75.75 0 0 1 0-1.06l1.06-1.06a.75.75 0 1 1 1.06 1.06l-1.06 1.06a.75.75 0 0 1-1.06 0"/></svg>
+      </button>
+    </div>
+  </header>
 
-    <header>
-      <h1>Jason Sutter</h1>
-      <p>Building privacy-first tools, cryptographic systems, and developer platforms.</p>
-      <div class="links">
-        <a href="https://github.com/jasonsutter87" target="_blank" rel="noopener">
-          <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/jasonsutter87" target="_blank" rel="noopener">
-          <svg viewBox="0 0 16 16"><path d="M13.6 1H2.4C1.6 1 1 1.6 1 2.4v11.2c0 .8.6 1.4 1.4 1.4h11.2c.8 0 1.4-.6 1.4-1.4V2.4c0-.8-.6-1.4-1.4-1.4zM5.3 13H3.1V6.5h2.2V13zM4.2 5.6c-.7 0-1.3-.6-1.3-1.3s.6-1.3 1.3-1.3 1.3.6 1.3 1.3-.6 1.3-1.3 1.3zM13 13h-2.2V9.8c0-.7 0-1.7-1-1.7s-1.2.8-1.2 1.6V13H6.4V6.5h2.1v.9c.3-.6 1-1 2-1 2.1 0 2.5 1.4 2.5 3.2V13z"/></svg>
-          LinkedIn
-        </a>
-        <a href="mailto:jasonsutter87@gmail.com">
-          <svg viewBox="0 0 16 16"><path d="M1.5 3.5l6.5 4 6.5-4v-1h-13v1zm0 1.25V12.5h13V4.75L8 8.75l-6.5-4z"/></svg>
-          Email
-        </a>
-      </div>
-    </header>
+  <div class="layout">
+    <aside class="profile">
+      <img class="avatar" src="https://github.com/jasonsutter87.png?size=460" alt="Jason Sutter" width="230" height="230">
+      <h1>Jason Sutter <span class="handle">jasonsutter87</span></h1>
+      <p class="headline" id="headline"></p>
+      <p class="summary" id="summary"></p>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="projects">
+      <div class="resume" id="resume"></div>
 
-        <a class="project" href="https://getpfm.io" target="_blank" rel="noopener">
-          <div class="project-header">
-            <span class="project-name">P.F.M.</span>
-            <span class="project-tag tag-live">Live</span>
+      <ul class="facts">
+        <li><span class="dot-open" aria-hidden="true"></span><b>Open to full-time roles</b></li>
+        <li><svg aria-hidden="true" viewBox="0 0 16 16"><path d="m12.6 11.2-3.5 3.5a1.5 1.5 0 0 1-2.2 0l-3.5-3.5a6.3 6.3 0 1 1 9.2 0m-1.1-1.1a4.8 4.8 0 1 0-7 0L8 13.6zM8 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4"/></svg>Sacramento, CA · SF Bay, Austin, Boston or remote</li>
+        <li><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M1.75 2h12.5c.97 0 1.75.78 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.78.78 2 1.75 2M1.5 5.030v7.22c0 .14.11.25.25.25h12.5c.14 0 .25-.11.25-.25V5.03L8.4 8.74a.75.75 0 0 1-.8 0zm12.65-1.53H1.85L8 7.2z"/></svg><a href="mailto:jasonsutter87@gmail.com">jasonsutter87@gmail.com</a></li>
+        <li><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8 8 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.950 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82a7.4 7.4 0 0 0-4 0C4.69 1.09 4.02 1.31 4.02 1.31c-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8"/></svg><a href="https://github.com/jasonsutter87">github.com/jasonsutter87</a></li>
+        <li><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M14.5 0h-13C.67 0 0 .65 0 1.45v13.1c0 .8.67 1.45 1.5 1.45h13c.83 0 1.5-.65 1.5-1.45V1.45C16 .65 15.33 0 14.5 0M4.75 13.6H2.4V6h2.35zM3.58 4.97a1.36 1.36 0 1 1 0-2.73 1.36 1.36 0 0 1 0 2.73M13.6 13.6h-2.36V9.9c0-.88-.02-2.02-1.23-2.02-1.23 0-1.42.96-1.42 1.96v3.77H6.24V6h2.26v1.04h.03a2.48 2.48 0 0 1 2.230-1.22c2.38 0 2.83 1.57 2.83 3.6z"/></svg><a href="https://www.linkedin.com/in/jasonsutter87">linkedin.com/in/jasonsutter87</a></li>
+        <li><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 0 1.5 2.5v5c0 4 2.8 7.4 6.5 8.5 3.7-1.1 6.5-4.5 6.5-8.5v-5zm0 1.6 5 1.93V7.5c0 3.2-2.13 5.96-5 6.92-2.87-.96-5-3.72-5-6.92V3.53z"/></svg><a href="https://hackerone.com/mrblackkeys">hackerone.com/mrblackkeys</a></li>
+      </ul>
+
+      <section class="exp" aria-labelledby="exp-h">
+        <h2 id="exp-h">Experience</h2>
+        <ol id="experience"></ol>
+      </section>
+    </aside>
+
+    <main>
+      <section class="lens" aria-labelledby="lens-h">
+        <div class="lens-head">
+          <h2 id="lens-h">What are you hiring for?</h2>
+          <p>Pick one. The projects re-rank, and the resume and summary switch to match.</p>
+        </div>
+        <div class="lens-btns" id="lens" role="group" aria-labelledby="lens-h"></div>
+      </section>
+
+      <section aria-labelledby="pins-h">
+        <h2 class="sec-h" id="pins-h">Pinned</h2>
+        <ol class="pins" id="pins"></ol>
+      </section>
+
+      <section class="activity" aria-labelledby="act-h">
+        <h2 class="sec-h" id="act-h"></h2>
+        <div class="graph-box">
+          <div class="graph-scroll">
+            <div class="graph" id="graph"></div>
           </div>
-          <p class="project-desc">Portable file format for AI conversations. Indexed O(1) section access, SHA-256 integrity, AES-256 encryption. 12-25x faster than JSON for targeted retrieval.</p>
-          <div class="project-tech">
-            <span class="tech">Python</span>
-            <span class="tech">TypeScript</span>
-            <span class="tech">Chrome Extension</span>
+          <div class="graph-foot">
+            <span id="graph-hint">Click a week to see what I was building then.</span>
+            <span class="legend" aria-hidden="true">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> More</span>
           </div>
-        </a>
+        </div>
+      </section>
 
-        <a class="project" href="https://getcryptoblocks.com" target="_blank" rel="noopener">
-          <div class="project-header">
-            <span class="project-name">CryptoBlocks</span>
-            <span class="project-tag tag-live">Live</span>
+      <section id="projects" aria-labelledby="proj-h">
+        <h2 class="sec-h" id="proj-h">Projects <span class="count" id="total"></span></h2>
+        <div class="toolbar">
+          <div class="cats" id="cats" role="group" aria-label="Category"></div>
+          <div class="toolbar-row">
+            <label class="select"><span>Language</span><select id="lang"></select></label>
+            <label class="select"><span>Sort</span><select id="sort">
+              <option value="match">Best match</option>
+              <option value="recent">Recently updated</option>
+              <option value="commits">Most commits</option>
+              <option value="name">Name</option>
+            </select></label>
+            <label class="toggle"><input type="checkbox" id="archive"> <span>Show sketches</span></label>
           </div>
-          <p class="project-desc">Visual programming platform that teaches real code. Snap blocks, see JavaScript or Python. 164+ blocks across 16 categories including cryptography, AI, and web.</p>
-          <div class="project-tech">
-            <span class="tech">React</span>
-            <span class="tech">TypeScript</span>
-            <span class="tech">Pyodide</span>
-            <span class="tech">Blockly</span>
-          </div>
-        </a>
-
-        <a class="project" href="https://veilforms.com" target="_blank" rel="noopener">
-          <div class="project-header">
-            <span class="project-name">VeilForms</span>
-            <span class="project-tag tag-live">Live</span>
-          </div>
-          <p class="project-desc">Client-side encrypted forms. Data is encrypted in the browser before transmission. The server never sees plaintext submissions.</p>
-          <div class="project-tech">
-            <span class="tech">Next.js</span>
-            <span class="tech">Hugo</span>
-            <span class="tech">WebCrypto</span>
-          </div>
-        </a>
-
-        <a class="project" href="https://ztas.io" target="_blank" rel="noopener">
-          <div class="project-header">
-            <span class="project-name">Zero Trust Analytics</span>
-            <span class="project-tag tag-soon">Coming Soon</span>
-          </div>
-          <p class="project-desc">Privacy-first web analytics. No cookies, no fingerprinting, no personal data. GDPR compliant without consent banners. Under 2KB.</p>
-          <div class="project-tech">
-            <span class="tech">TypeScript</span>
-            <span class="tech">Docker</span>
-          </div>
-        </a>
-
-        <a class="project" href="https://github.com/jasonsutter87/TVS-Whitepaper" target="_blank" rel="noopener">
-          <div class="project-header">
-            <span class="project-name">TVS &mdash; Trustless Voting System</span>
-            <span class="project-tag tag-paper">Whitepaper</span>
-          </div>
-          <p class="project-desc">Cryptographic voting system achieving voter privacy, vote integrity, and public verifiability without trust in any single authority. 1M voters in 3m 33s.</p>
-          <div class="project-tech">
-            <span class="tech">Blind Signatures</span>
-            <span class="tech">zk-SNARKs</span>
-            <span class="tech">Threshold Crypto</span>
-            <span class="tech">Merkle Trees</span>
-          </div>
-        </a>
-
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2026 Jason Sutter</p>
-    </footer>
-
+        </div>
+        <p class="status-line" id="status" aria-live="polite"></p>
+        <ul class="repos" id="repos"></ul>
+      </section>
+    </main>
   </div>
 
+  <footer class="foot">
+    <p>Built by hand, with no framework and no build step. The activity graph comes from real git history (<code>tools/build-activity.mjs</code>). <a href="https://github.com/jasonsutter87/jasonsutter87.github.io">Source</a></p>
+  </footer>
+
+  <dialog id="drawer" class="drawer" aria-labelledby="d-name">
+    <div class="drawer-inner" id="drawer-body"></div>
+  </dialog>
+
+  <script src="data/projects.js"></script>
+  <script src="data/activity.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
