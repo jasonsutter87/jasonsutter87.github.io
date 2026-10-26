@@ -1,7 +1,7 @@
 // Every project on the site. Source of truth: ~/Documents/Companies.
-// `git` lists folders under that directory; tools/build-activity.mjs reads their
-// history into data/activity.js. `roles` is relevance 0-3 for each hiring lens:
-// [applied AI, AI product, forward deployed, solutions].
+// tools/build-site.ts turns the non-archive ones into the projects section's cards.
+// `git` lists each project's folders under that directory. `roles` is relevance 0-3
+// for each hiring lens: [applied AI, AI product, forward deployed, solutions].
 // `vis: 'private'` means no repo link is shown.
 
 window.PROJECTS = [
